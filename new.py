@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def get():
   return render_template("index.html")
-@app.route("/hello",methods=["POST"])
+@app.route("/video",methods=["POST"])
 def ret():
 	url = request.form["url"]
 	url = str(url).split("v=")[1]
